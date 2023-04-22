@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GUESS NUMBER</title>
+    <link rel="stylesheet" href="guess.css"> 
+    <script src="guess.js"></script>
+  </head>
+  <body>
+    <div class="total-box">
+    <p class="enter-text-area" id="enter">ENTER A NUMBER BETWEEN 0 AND 100</p>
+    <input class="text-box" id="input" type="text">
+    <p class="display-area" id="display"></p>
+    <p class="hint-area" >HINT:
+      <progress id="hint" value="0" max="100">
+      </progress>
+    </p>
+    <button class="start-button" id="start-btn" onclick="randomNumberGenerator();this.style.display='none'">START</button>
+    <button class="guess-button" onclick="check();hintFunction()">GUESS</button>
+    <button class="reset-button" onclick="randomNumberGenerator();textReset();">RESET</button>
+    
+  </div>
+  </body>
+</html>
